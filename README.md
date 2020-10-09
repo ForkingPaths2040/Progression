@@ -73,17 +73,24 @@ Deployment:
 
 | Component                                                         | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project setup                                                     |    H     |     0.5 hr     |    0.5 hr     |   0.5 hr    |
-| Build Componenets                                                 |    H     |      1hr       |               |   0.5 hr    | 1 hr |
-| Implementing API Key                                              |    H     |     0.5 hr     |    2.5 hr     |    4 hr     |
-| Returning response from initial get request and playing with data |    H     |     3 hrs      |     3 hrs     |    8 hrs    |
-| Whiteboarding                                                     |    H     |    0.75 hr     |     2 hr      |   9.5 hrs   |
-| Style desktop elements                                            |    H     |     3 hrs      |     8 hrs     |  34.5 hrs   |
-| Style tablet elements                                             |    H     |     3 hrs      |     3 hrs     |  37.5 hrs   |
-| Style mobile elements                                             |    H     |     3 hrs      |     3 hrs     |  37.5 hrs   |
-| Troubleshooting and Research/Learn                                |    H     |     8 Hrs      |     8 hrs     |  45.5 hrs   |
-| Total                                                             |    H     |     16 hrs     |   41.5 hrs    |   47 hrs    |
+| Project setup                                                     |    H     |     3 hrs      |               |             |
+| Build Componenets                                                 |    H     |     3 hrs      |               |             |
+| Implementing API Base/Key                                         |    H     |     3 hrs      |               |             |
+| Returning response from initial get request and playing with data |    H     |     3 hrs      |               |             |
+| Create a POST request                                             |    H     |     3 hrs      |               |             |
+| Return and render GET request of entries                          |    H     |     3 hrs      |               |             |
+| Whiteboarding                                                     |    H     |     3 hrs      |               |             |
+| Style desktop elements                                            |    H     |     3 hrs      |               |             |
+| Style tablet elements                                             |    H     |     3 hrs      |               |             |
+| Style mobile elements                                             |    H     |     3 hrs      |               |             |
+| Troubleshooting and Research/Learn                                |    H     |     3 hrs      |               |             |
+| Total                                                             |    H     |     33 hrs     |               |             |
 
 ## Swot
+
+Strengths: All components are examples from lectures making the project manageable.
+Weaknesses: The project implements video which could cause problems.
+Opportunities: The project has the potential to have a lot of layers creating a an engaging platform.
+Threats: The project has to be configured properly so that others can't access the data or manipulate it.
 
 ## Change Log
