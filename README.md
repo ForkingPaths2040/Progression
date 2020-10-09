@@ -4,7 +4,7 @@ Project 2 for GA's SEI
 
 ## Project Description
 
-This app is designed to learn skateboarding tricks along with motivating users to continue learning as they get to track their progress through a video log.
+This app is designed to learn skateboarding tricks along with motivating users to continue learning as they get to see others progress through a video log.
 
 ## API and Data Sample
 
@@ -32,8 +32,8 @@ base('tricks').create([
 #### MVP
 
 React:
--working react app
--use React Router
+*working react app
+*use React Router
 -6 seperate rendered components
 -organized file system
 -use either functional or class components
