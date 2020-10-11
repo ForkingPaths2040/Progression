@@ -4,28 +4,27 @@ Project 2 for GA's SEI
 
 ## Project Description
 
-This app is designed to learn skateboarding tricks along with motivating users to continue learning as they get to see others progress through a video log.
+This app is designed to maintain a user's inventory of tools. You can add and look at the list of tools.
 
 ## API and Data Sample
 
 https://api.airtable.com/v0/
 
-base('tricks').create([
 {
+"records": [
+{
+"id": "recbZKJJvwtYFhFOu",
 "fields": {
-"video-link": "https://www.youtube.com/watch?v=UWLiI7mL_Z4&t=152s&loop=30&start=00:53&end=00:54",
-"name": "Ollie",
-"description": "Foot Position\nPopping the tail\nSliding the front foot\nKicking the front foot\nPutting it all together\nLand!"
-}
+"name": "Hammer",
+"number": 1,
+"brand": "Dewalt",
+"location": "Toolbox",
+"description": "A hammer is a tool consisting of a weighted \"head\" fixed to a long handle that is swung to deliver an impact to a small area of an object. This can be...",
+"category": "Hand Tools",
+"created": "2020-10-09T12:49:51.000Z"
 },
-{
-"fields": {
-"video-link": "https://www.youtube.com/watch?v=UWLiI7mL_Z4&t=152s&loop=30&start=00:54&end=00:55",
-"name": "Frontside 180",
-"description": "Simply pop your ollie, slightly turned already as you pop. As your front foot slides up the board and your head and shoulders turn towards your heels,..."
+"createdTime": "2020-10-09T12:49:51.000Z"
 }
-}
-]
 
 ## Wireframes
 
@@ -89,8 +88,8 @@ Deployment:
 ## Swot
 
 Strengths: All components are examples from lectures making the project manageable.
-Weaknesses: The project implements video which could cause problems.
-Opportunities: The project has the potential to have a lot of layers creating a an engaging platform.
+Weaknesses: Simplictic, design will need to be good to create engagement.
+Opportunities: The project has the potential to add different features like the ability to delete.
 Threats: The project has to be configured properly so that others can't access the data or manipulate it.
 
 ## Change Log
