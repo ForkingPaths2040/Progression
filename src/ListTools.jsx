@@ -26,6 +26,7 @@ function ListTools() {
           <h3>{tool.fields.brand}</h3>
           <h3>{tool.fields.location}</h3>
           <h3>{tool.fields.category}</h3>
+          <iframe src={tool.fields.link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <hr />
         </div>
       ))}
