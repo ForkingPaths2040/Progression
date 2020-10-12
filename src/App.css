@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+li {
+  display: block;
+  list-style-type: none;
+  float: right;
+  padding: 15px;
+  text-decoration: none;
+}
+ul {
+  margin-right: 30px;
+}
+nav {
+  background-color: #363946;
+  height: 50px;
+  width: 100%;
+}
+.list-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.tricks-container {
+  display: flex;
+  flex-flow: column wrap;
+}

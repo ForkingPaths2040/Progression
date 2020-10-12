@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
-import ListTools from "./ListTools";
+import ListTricks from "./ListTricks";
+import TrickPage from './TrickPage'
 import Form from "./Form";
 import "./App.css";
 
@@ -13,15 +14,18 @@ function App() {
             <Link to="/form">New +</Link>
           </li>
           <li>
-            <Link to="/tools">Tools</Link>
+            <Link to="/tricks">Tricks</Link>
           </li>
         </ul>
       </nav>
-      <Route path="/tools">
-        <ListTools />
+      <Route path="/tricks">
+        <ListTricks />
       </Route>
       <Route path="/form">
         <Form />
+      </Route>
+      <Route path={`/tricks/:name`}>
+        <TrickPage />
       </Route>
     </div>
   );
