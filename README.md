@@ -4,7 +4,7 @@ Project 2 for GA's SEI
 
 ## Project Description
 
-This app is designed to maintain a user's inventory of tools. You can add and look at the list of tools.
+This app is designed to learn skateboarding tricks along with motivating users to continue learning as they get to see others progress through a video log.
 
 ## API and Data Sample
 
@@ -88,8 +88,8 @@ Deployment:
 ## Swot
 
 Strengths: All components are examples from lectures making the project manageable.
-Weaknesses: Simplictic, design will need to be good to create engagement.
-Opportunities: The project has the potential to add different features like the ability to delete.
+Weaknesses: The project implements video which could cause problems.
+Opportunities: The project has the potential to have a lot of layers creating a an engaging platform.
 Threats: The project has to be configured properly so that others can't access the data or manipulate it.
 
 ## Change Log
