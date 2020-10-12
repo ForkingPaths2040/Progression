@@ -8,8 +8,14 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/tools">Tools</Link>
-        <Link to="/form">New +</Link>
+        <ul>
+          <li>
+            <Link to="/form">New +</Link>
+          </li>
+          <li>
+            <Link to="/tools">Tools</Link>
+          </li>
+        </ul>
       </nav>
       <Route path="/tools">
         <ListTools />
