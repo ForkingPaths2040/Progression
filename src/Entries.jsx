@@ -17,15 +17,27 @@ function Entries() {
   }, []);
     return (
       <div>
+        <table>
+          <tbody>
+            <tr>
+              <th>TRICK</th>
+              <th>USERNAME</th>
+              <th>STANCE</th>
+              <th>TYPE</th>
+              <th>LANDING</th>
+            </tr>
         {entries.map((entry) => (
-          <div className='entry-container' key={entry.id}>
-            <h4 className='entry-cells'>{entry.fields.trick}</h4>
-            <h4 className='entry-cells'>{entry.fields.username}</h4>
-            <h4 className='entry-cells'>{entry.fields.stance}</h4>
-            <h4 className='entry-cells'>{entry.fields.type}</h4>
-            <h4 className='entry-cells'>{entry.fields.landing}</h4>
-            </div>
+          <tr className='entry-container' key={entry.id}>
+            <td className='entry-cells'>{entry.fields.trick}</td>
+            <td className='entry-cells'>{entry.fields.username}</td>
+            <td className='entry-cells'>{entry.fields.stance}</td>
+            <td className='entry-cells'>{entry.fields.type}</td>
+            <td className='entry-cells'>{entry.fields.landing}</td>
+          </tr>
         ))}
+            </tbody>
+        </table>
+          
       </div>
 
     );
