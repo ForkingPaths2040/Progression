@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, Route } from 'react-router-dom'
+import { useParams, Link} from 'react-router-dom'
 
 
 function TrickPage(props) {

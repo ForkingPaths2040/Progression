@@ -31,3 +31,9 @@ nav {
   max-width: 80vw;
   max-height: 80vh;
 }
+.entry-container {
+  border: 1px solid black;
+}
+.entry-cells {
+  display: inline-block;
+}
