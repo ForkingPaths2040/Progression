@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import ListTricks from "./ListTricks";
 import TrickPage from './TrickPage'
 import Entries from './Entries'
 import Form from "./Form";
 import axios from 'axios'
 import "./App.css";
+import Header from "./Header";
 
 function App() {
   const [tricks, setTricks] = useState([]);
@@ -23,19 +24,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/entry">New Entry</Link>
-          </li>
-          <li>
-            <Link to="/tricks">Tricks</Link>
-          </li>
-          <li>
-            <Link to="/progressions">Progressions</Link>
-          </li>
-        </ul>
-      </nav>
+        <Header />
       <Route  exact path="/tricks">
         <ListTricks tricks={tricks}/>
       </Route>
