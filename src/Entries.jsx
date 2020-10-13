@@ -17,7 +17,7 @@ function Entries() {
   }, []);
     return (
       <div>
-        <table>
+        <table className='entries'>
           <tbody>
             <tr>
               <th>TRICK</th>

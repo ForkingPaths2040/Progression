@@ -26,26 +26,26 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/form">New +</Link>
+            <Link to="/entry">New Entry</Link>
           </li>
           <li>
             <Link to="/tricks">Tricks</Link>
           </li>
           <li>
-            <Link to="/videos">Video</Link>
+            <Link to="/progressions">Progressions</Link>
           </li>
         </ul>
       </nav>
       <Route  exact path="/tricks">
         <ListTricks tricks={tricks}/>
       </Route>
-      <Route path="/form">
+      <Route path="/entry">
         <Form />
       </Route>
       <Route path={`/tricks/:name`}>
         <TrickPage tricks={tricks} />
       </Route>
-      <Route path='/videos'>
+      <Route path='/progressions'>
         <Entries />
       </Route>
     </div>

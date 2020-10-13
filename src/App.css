@@ -31,9 +31,12 @@ nav {
   max-width: 80vw;
   max-height: 80vh;
 }
-/* .entry-container {
-  border: 1px solid black;
+.entries th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #363946;
+  margin: 0;
 }
-.entry-cells {
-  display: inline-block;
-} */
