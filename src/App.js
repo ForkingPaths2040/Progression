@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { Link, Route } from "react-router-dom";
 import ListTricks from "./ListTricks";
 import TrickPage from './TrickPage'
-import Video from './Video'
+import Entries from './Entries'
 import Form from "./Form";
 import axios from 'axios'
 import "./App.css";
@@ -46,7 +46,7 @@ function App() {
         <TrickPage tricks={tricks} />
       </Route>
       <Route path='/videos'>
-        <Video />
+        <Entries />
       </Route>
     </div>
   );
