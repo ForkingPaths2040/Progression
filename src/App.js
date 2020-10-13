@@ -11,10 +11,10 @@ function App() {
   const [tricks, setTricks] = useState([]);
   useEffect(() => {
     const getTricks = async () => {
-      const airtableURL = `https://api.airtable.com/v0/appsnyAAoewIo80Ig/tricks`;
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/tricks`;
       const response = await axios.get(airtableURL, {
         headers: {
-          Authorization: `Bearer keyA4pUKd1DMLTmI9`,
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
       setTricks(response.data.records);
