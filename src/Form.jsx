@@ -9,6 +9,7 @@ function Form(props) {
   const [location, setLocation] = useState("");
   const [landing, setLanding] = useState("");
   const [type, setType] = useState("");
+  const [stance, setStance] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +20,8 @@ function Form(props) {
       location,
       landing,
       trick,
-      type
+      type,
+      stance
     };
     const airtableURL = `https://api.airtable.com/v0/appsnyAAoewIo80Ig/progressions`;
     await Axios.post(
@@ -38,6 +40,7 @@ function Form(props) {
     setLanding("");
     setType("");
     setTrick("");
+    setStance('')
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -84,6 +87,12 @@ function Form(props) {
         <option>Street</option>
         <option>Park</option>
         <option>Vert</option>
+      </select>
+      <label htmlFor="">Stance</label>
+      <select value={stance} onChange={(e) => setStance(e.target.value)}>
+        <option>Select</option>
+        <option>Goofy</option>
+        <option>Regular</option>
       </select>
       <button type="submit">Submit</button>
     </form>

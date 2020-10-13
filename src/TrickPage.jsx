@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, Link, Route } from 'react-router-dom'
 
 
 function TrickPage(props) {
@@ -8,11 +8,17 @@ function TrickPage(props) {
   let trick = props.tricks.find((t) => {
   return t.fields.name === params.name
   })
-
+console.log(trick)
   return (
     <div>
-      <h1>{params.name}</h1>
-      <p></p>
+      <img src={trick.fields.giph} alt="ollie" />
+      <h1>{trick.fields.name}</h1>
+      <p>{trick.fields.description}</p>
+      <li>{trick.fields.timeline}</li>
+      <li>{trick.fields.type}</li>
+      <Link to='/form'>
+        <button>Try for yourself!</button>
+        </Link>
     </div>
   );
 };
