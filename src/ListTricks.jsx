@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function ListTricks(props) {
 
   return (
-    <div>
+    <div className= "all-tricks">
       {props.tricks.map((trick) => (
         <div className="tricks-container" key={trick.fields.number}>
           <Link to={`/tricks/${trick.fields.name}`}>
