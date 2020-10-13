@@ -11,7 +11,7 @@ function TrickPage(props) {
 console.log(trick)
   return (
     <div>
-      <img src={trick.fields.giph} alt="ollie" />
+      <img src={trick.fields.giph} alt={trick.fields.name} />
       <h1>{trick.fields.name}</h1>
       <p>{trick.fields.description}</p>
       <li>{trick.fields.timeline}</li>
