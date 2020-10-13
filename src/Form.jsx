@@ -2,22 +2,26 @@ import Axios from "axios";
 import React, { useState } from "react";
 
 function Form(props) {
-  const [name, setName] = useState("");
+  const [username, setUserName] = useState("");
   const [description, setDescription] = useState("");
-  const [brand, setBrand] = useState("");
+  const [giph, setGiph] = useState("");
+  const [trick, setTrick] = useState("");
   const [location, setLocation] = useState("");
-  const [category, setCategory] = useState("");
+  const [landing, setLanding] = useState("");
+  const [type, setType] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
-      name,
+      username,
       description,
-      brand,
+      giph,
       location,
-      category,
+      landing,
+      trick,
+      type
     };
-    const airtableURL = `https://api.airtable.com/v0/appsnyAAoewIo80Ig/tools`;
+    const airtableURL = `https://api.airtable.com/v0/appsnyAAoewIo80Ig/progressions`;
     await Axios.post(
       airtableURL,
       { fields },
@@ -27,19 +31,27 @@ function Form(props) {
         },
       }
     );
-    setName("");
+    setUserName("");
     setDescription("");
-    setBrand("");
+    setGiph("");
     setLocation("");
-    setCategory("");
+    setLanding("");
+    setType("");
+    setTrick("");
   };
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="">Name</label>
+      <label htmlFor="">Username</label>
       <input
         type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={username}
+        onChange={(e) => setUserName(e.target.value)}
+      />
+      <label htmlFor="">Trick</label>
+      <input
+        type="text"
+        value={trick}
+        onChange={(e) => setTrick(e.target.value)}
       />
       <label htmlFor="">Description</label>
       <textarea
@@ -47,27 +59,31 @@ function Form(props) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       ></textarea>
-      <label htmlFor="">Brand</label>
+      <label htmlFor="">Giph</label>
       <input
         type="text"
-        value={brand}
-        onChange={(e) => setBrand(e.target.value)}
+        value={giph}
+        onChange={(e) => setGiph(e.target.value)}
       />
       <label htmlFor="">Location</label>
-      <select value={location} onChange={(e) => setLocation(e.target.value)}>
+      <input
+        type="text"
+        value={location}
+        onChange={(e) => setLocation(e.target.value)}
+      />
+      <label htmlFor="">Landing</label>
+      <select value={landing} onChange={(e) => setLanding(e.target.value)}>
         <option>Select</option>
-        <option>Garage</option>
-        <option>Toolbox</option>
-        <option>Junk Drawer</option>
-        <option>Truck/car</option>
+        <option>Clean</option>
+        <option>Sketchy</option>
+        <option>Fail</option>
       </select>
-      <label htmlFor="">Category</label>
-      <select value={category} onChange={(e) => setCategory(e.target.value)}>
+      <label htmlFor="">Type</label>
+      <select value={type} onChange={(e) => setType(e.target.value)}>
         <option>Select</option>
-        <option>Hand Tools</option>
-        <option>Power Tools</option>
-        <option>Fasteners</option>
-        <option>Gardening Tools</option>
+        <option>Street</option>
+        <option>Park</option>
+        <option>Vert</option>
       </select>
       <button type="submit">Submit</button>
     </form>
