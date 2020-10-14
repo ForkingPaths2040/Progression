@@ -7,6 +7,8 @@ import Form from "./Components/Form";
 import axios from 'axios'
 import "./App.css";
 import Header from "./Components/Header";
+import Footer from './Components/Footer'
+import HomePage from './Components/HomePage'
 
 function App() {
   const [tricks, setTricks] = useState([]);
@@ -24,7 +26,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-        <Header />
+      <Header />
+      <Route exact path='/'>
+      <HomePage />
+      </Route>
       <Route  exact path="/tricks">
         <ListTricks tricks={tricks}/>
       </Route>
@@ -37,6 +42,7 @@ function App() {
       <Route path='/progressions'>
         <Entries />
       </Route>
+      <Footer />
     </div>
   );
 }
