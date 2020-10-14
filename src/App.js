@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
 import { Route } from "react-router-dom";
-import ListTricks from "./ListTricks";
-import TrickPage from './TrickPage'
-import Entries from './Entries'
-import Form from "./Form";
+import ListTricks from "./Components/ListTricks";
+import TrickPage from './Components/TrickPage'
+import Entries from './Components/Entries'
+import Form from "./Components/Form";
 import axios from 'axios'
 import "./App.css";
-import Header from "./Header";
+import Header from "./Components/Header";
 
 function App() {
   const [tricks, setTricks] = useState([]);
