@@ -9,27 +9,31 @@ ul {
   margin-right: 30px;
 }
 nav {
-  background-color: #363946;
+  background-color: #1b4965;
   height: 50px;
   width: 100%;
 }
+.page-length {
+  height: 600px;
+}
+
 .list-button {
-  background-color: #4caf50; /* Green */
-  border: none;
+  background-color: #58c6c4;
+  border: 1px solid black;
   color: white;
-  padding: 15px 32px;
+  padding: 30px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
 }
 .all-tricks {
   display: grid;
-  max-width: 400px;
-  grid-template-columns: repeat(3 1fr);
-}
-
-.trick-container {
-  padding: 1px;
+  max-width: 90%;
+  margin: 35px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: center;
 }
 .entries th {
   padding-top: 12px;
@@ -43,4 +47,10 @@ nav {
 .link {
   text-decoration: none;
   color: white;
+}
+.footer {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  margin: auto;
 }
