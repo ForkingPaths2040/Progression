@@ -3,8 +3,8 @@ li {
   list-style-type: none;
   float: right;
   padding: 15px;
-  text-decoration: none;
 }
+
 ul {
   margin-right: 30px;
 }
@@ -24,12 +24,12 @@ nav {
 }
 .all-tricks {
   display: grid;
+  max-width: 400px;
   grid-template-columns: repeat(3 1fr);
-  grid-template-rows: auto;
-  width: 900px;
-  height: 100px;
-  max-width: 80vw;
-  max-height: 80vh;
+}
+
+.trick-container {
+  padding: 1px;
 }
 .entries th {
   padding-top: 12px;
@@ -39,4 +39,8 @@ nav {
   color: white;
   border: 1px solid #363946;
   margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: white;
 }

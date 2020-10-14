@@ -7,13 +7,13 @@ function Header(props) {
       <nav>
         <ul>
           <li>
-            <Link to="/entry">New Entry</Link>
+            <Link to="/entry" className='link'>New Entry</Link>
           </li>
           <li>
-            <Link to="/tricks">Tricks</Link>
+            <Link to="/tricks" className='link'>Tricks</Link>
           </li>
           <li>
-            <Link to="/progressions">Progressions</Link>
+            <Link to="/progressions" className='link'>Progressions</Link>
           </li>
         </ul>
       </nav>
