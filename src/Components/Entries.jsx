@@ -19,7 +19,7 @@ function Entries() {
       <div>
         <table className='entries'>
           <tbody>
-            <tr>
+            <tr className='table-header'>
               <th>TRICK</th>
               <th>USERNAME</th>
               <th>STANCE</th>

@@ -43,59 +43,66 @@ function Form(props) {
     setStance('')
   };
   return (
+    <div className='form-container'>
     <form onSubmit={handleSubmit}>
-      <label htmlFor="">Username</label>
+      <label htmlFor=""></label>
       <input
         type="text"
         value={username}
+        placeholder='Username'
         onChange={(e) => setUserName(e.target.value)}
       />
-      <label htmlFor="">Trick</label>
+      <label htmlFor=""></label>
       <input
         type="text"
         value={trick}
+        placeholder='Name of trick'
         onChange={(e) => setTrick(e.target.value)}
       />
-      <label htmlFor="">Description</label>
-      <textarea
+      <label htmlFor=""></label>
+      <textarea id='text-area'
         type="text"
+        placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       ></textarea>
-      <label htmlFor="">Giph</label>
+      <label htmlFor=""></label>
       <input
         type="text"
         value={giph}
+        placeholder="URL link from Giphy"
         onChange={(e) => setGiph(e.target.value)}
       />
-      <label htmlFor="">Location</label>
+      <label htmlFor=""></label>
       <input
         type="text"
         value={location}
+        placeholder='Location'
         onChange={(e) => setLocation(e.target.value)}
       />
-      <label htmlFor="">Landing</label>
-      <select value={landing} onChange={(e) => setLanding(e.target.value)}>
-        <option>Select</option>
+      <label htmlFor=""></label>
+      <select value={landing} onChange={(e) => setLanding(e.target.value)} >
+        <option>Landing Type</option>
         <option>Clean</option>
         <option>Sketchy</option>
         <option>Fail</option>
       </select>
-      <label htmlFor="">Type</label>
+      <label htmlFor=""></label>
       <select value={type} onChange={(e) => setType(e.target.value)}>
-        <option>Select</option>
+        <option>Environment Type</option>
         <option>Street</option>
         <option>Park</option>
         <option>Vert</option>
       </select>
-      <label htmlFor="">Stance</label>
+      <label htmlFor=""></label>
       <select value={stance} onChange={(e) => setStance(e.target.value)}>
-        <option>Select</option>
+        <option>Stance</option>
         <option>Goofy</option>
         <option>Regular</option>
       </select>
       <button type="submit">Submit</button>
-    </form>
+      </form>
+      </div>
   );
 }
 
