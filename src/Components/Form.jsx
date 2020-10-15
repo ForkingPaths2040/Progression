@@ -44,6 +44,7 @@ function Form(props) {
   };
   return (
     <div className='form-container'>
+      <div className='form'>
     <form onSubmit={handleSubmit}>
       <label htmlFor=""></label>
       <input
@@ -100,8 +101,9 @@ function Form(props) {
         <option>Goofy</option>
         <option>Regular</option>
       </select>
-      <button type="submit">Submit</button>
-      </form>
+      <button id='submit-form' type="submit">Submit</button>
+        </form>
+        </div>
       </div>
   );
 }
