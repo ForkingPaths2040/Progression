@@ -10,7 +10,8 @@ function TrickPage(props) {
   })
 console.log(trick)
   return (
-    <div>
+    <div className='trick-page-container'>
+    <div className='trick-page'>
       <img src={trick.fields.giph} alt={trick.fields.name} />
       <h1>{trick.fields.name}</h1>
       <p>{trick.fields.description}</p>
@@ -19,7 +20,8 @@ console.log(trick)
       <Link to='/entry'>
         <button>Try for yourself!</button>
         </Link>
-    </div>
+      </div>
+      </div>
   );
 };
 

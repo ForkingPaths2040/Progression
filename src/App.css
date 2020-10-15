@@ -1,15 +1,20 @@
-li {
+body {
+  min-height: 100%;
+  background-image: url(https://wallpaperset.com/w/full/4/b/6/523946.jpg);
+  background-size: cover;
+}
+.nav-item {
   display: block;
   list-style-type: none;
   float: right;
   padding: 15px;
 }
 
-ul {
+nav ul {
   margin-right: 30px;
 }
 nav {
-  background-color: #1b4965;
+  background-color: none;
   height: 50px;
   width: 100%;
 }
@@ -18,7 +23,7 @@ nav {
 }
 
 .list-button {
-  background-color: #58c6c4;
+  background-color: #828282;
   border: 1px solid black;
   color: white;
   padding: 30px;
@@ -49,8 +54,28 @@ nav {
   color: white;
 }
 .footer {
-  display: flex;
-  align-content: flex-end;
-  justify-content: center;
-  margin: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: white;
+}
+.home-page > h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.trick-page {
+  background: rgb(255, 255, 255, 0.3);
+  color: white;
+  width: 50%;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 1em;
+}
+.trick-page button {
+  left: 50%;
 }
