@@ -7,7 +7,6 @@ import Form from "./Components/Form";
 import axios from 'axios'
 import "./App.css";
 import Header from "./Components/Header";
-import Footer from './Components/Footer'
 import HomePage from './Components/HomePage'
 
 function App() {
@@ -42,7 +41,6 @@ function App() {
       <Route path='/progressions'>
         <Entries />
       </Route>
-      <Footer />
     </div>
   );
 }
