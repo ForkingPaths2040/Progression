@@ -1,7 +1,8 @@
 body {
   min-height: 100%;
   background-image: url(https://wallpaperset.com/w/full/4/b/6/523946.jpg);
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 60%;
 }
 .nav-item {
   display: block;
@@ -95,7 +96,7 @@ nav {
 .form-container {
   margin: 5% auto;
   width: 50%;
-  background: rgb(255, 255, 255, 0.3);
+  background: none;
   border-radius: 1em;
 }
 input[type="text"],
@@ -113,8 +114,7 @@ button {
   width: 75%;
   margin: auto;
 }
-.form {
-}
+
 #submit-form {
   background-color: black;
   color: white;
@@ -124,14 +124,55 @@ button {
   resize: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px) and (min-width: 361px) {
+  body {
+    background-attachment: fixed;
+    background-position: 50% 70%;
+  }
+  nav {
+    background: black;
+    margin-top: -17px;
+  }
+  .nav-item {
+    display: inline;
+    font-size: 10px;
+  }
   .all-tricks {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     width: 100%;
   }
+  .home-page {
+    position: absolute;
+    left: 130px;
+    top: 170px;
+  }
+  .home-page h1 {
+    width: 225px;
+  }
   .trick-container {
     width: 100%;
+  }
+  .form-container {
+    width: 100%;
+    background: none;
+  }
+  .trick-page-container {
+    width: 100%;
+  }
+  .trick-page {
+    width: 80%;
+    border-radius: 0%;
+    padding: 10px;
+    margin: 10px auto;
+    overflow-wrap: break-word;
+  }
+  .trick-page img {
+    max-width: 60%;
+    margin: auto;
+  }
+  .trick-page button {
+    margin: 15px;
   }
 }
