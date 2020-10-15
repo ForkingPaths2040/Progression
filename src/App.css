@@ -113,8 +113,7 @@ button {
   width: 75%;
   margin: auto;
 }
-.form {
-}
+
 #submit-form {
   background-color: black;
   color: white;
@@ -125,6 +124,10 @@ button {
 }
 
 @media (max-width: 425px) {
+  body {
+    background-attachment: fixed;
+    background-position: center;
+  }
   .all-tricks {
     display: grid;
     grid-template-columns: 1fr;
