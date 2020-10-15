@@ -17,7 +17,7 @@ console.log(trick)
       <p>{trick.fields.description}</p>
       <li>{trick.fields.timeline}</li>
       <li>{trick.fields.type}</li>
-      <Link to='/entry'>
+      <Link to='/entry' id='button-link'>
         <button>Try for yourself!</button>
         </Link>
       </div>
