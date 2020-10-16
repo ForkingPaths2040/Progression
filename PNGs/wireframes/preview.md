@@ -1,7 +1,7 @@
 ![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Desktop-Form.png)
 ![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Desktop-Home.png)
 ![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Desktop-IndexTricks.png)
-![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Desktop-IndexUsers.png)
+![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Desktop-Trickpage.png)
 ![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Mobile-Form.png)
 ![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Mobile-IndexTricks.png)
 ![wireframes](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/Mobile-IndexUsers.png)
