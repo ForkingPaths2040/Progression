@@ -1,6 +1,6 @@
 # Progression
 
-### View the [Progression Website](https://progression.netlify.app/)
+### View the [Progression] Website(https://progression.netlify.app/)
 
 ## Project Description
 
