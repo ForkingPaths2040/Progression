@@ -34,21 +34,22 @@ https://api.airtable.com/v0/
 #### MVP
 
 React:
-*working react app
-*use React Router
--6 seperate rendered components
--organized file system
--use either functional or class components
--use Axios to GET/POST data
--use React for DOM manipulation
-Style:
--style through css, styled coomponents or component library
--use flexbox or grid with CSS
-Linting:
--appropriate naming conventions with either camelCase or kebab-case in the correct environments
--remove clutter of console.logs and uneccessary comments
-Deployment:
--deploy via Netlify
+
+- working react app
+- use React Router
+- 6 seperate rendered components
+- organized file system
+- use either functional or class components
+- use Axios to GET/POST data
+- use React for DOM manipulation
+  Style:
+- style through css, styled coomponents or component library
+- use flexbox or grid with CSS
+  Linting:
+- appropriate naming conventions with either camelCase or kebab-case in the correct environments
+- remove clutter of console.logs and uneccessary comments
+  Deployment:
+- deploy via Netlify
 
 #### PostMVP
 
