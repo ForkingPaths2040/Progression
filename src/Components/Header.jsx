@@ -5,7 +5,6 @@ function Header(props) {
   return (
     <div>
       <nav>
-        <ul>
           <li className='nav-item'>
             <Link to="/entry" className='link' >New Entry</Link>
           </li>
@@ -18,7 +17,6 @@ function Header(props) {
           <li className='nav-item'>
             <Link to="/" className='link'>Home</Link>
           </li>
-        </ul>
       </nav>
     </div>
   );
