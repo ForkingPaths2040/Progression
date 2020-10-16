@@ -10,6 +10,7 @@ This app is designed to learn skateboarding tricks along with motivating users t
 
 https://api.airtable.com/v0/
 
+```
 {
 "fields": {
 "name": "Carving",
@@ -28,6 +29,7 @@ https://api.airtable.com/v0/
 "type": "#Ramp"
 }
 }
+```
 
 ## Wireframes
 
@@ -53,8 +55,8 @@ React:
 
 #### PostMVP
 
--Look at indivual entries after it returns new get request
--filter results of entries
+- Look at indivual entries after it returns new get request
+- filter results of entries
 
 ## Project Schedule
 
