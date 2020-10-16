@@ -11,19 +11,22 @@ This app is designed to learn skateboarding tricks along with motivating users t
 https://api.airtable.com/v0/
 
 {
-"records": [
-{
-"id": "recbZKJJvwtYFhFOu",
 "fields": {
-"name": "Hammer",
-"number": 1,
-"brand": "Dewalt",
-"location": "Toolbox",
-"description": "A hammer is a tool consisting of a weighted \"head\" fixed to a long handle that is swung to deliver an impact to a small area of an object. This can be...",
-"category": "Hand Tools",
-"created": "2020-10-09T12:49:51.000Z"
+"name": "Carving",
+"description": "Carving on a skateboard is about flow. You can carve into and out of the corners hips and dips. Gaining speed and flowing all over the place. We call ...",
+"timeline": "6 months",
+"giph": "https://media.giphy.com/media/ZvTRnER0vGJ4IXbFbr/giphy.gif",
+"type": "#Bowl"
+}
 },
-"createdTime": "2020-10-09T12:49:51.000Z"
+{
+"fields": {
+"name": "Drop-In",
+"description": "A trick with which a skateboarder starts skating a half-pipe by dropping into it from the coping instead of starting from the bottom and pumping gradu...",
+"timeline": "3 months",
+"giph": "https://thumbs.gfycat.com/GrandBruisedComet-small.gif",
+"type": "#Ramp"
+}
 }
 
 ## Wireframes
@@ -56,34 +59,35 @@ Deployment:
 
 | Day     | Deliverable                                                                    | Status     |
 | ------- | ------------------------------------------------------------------------------ | ---------- |
-| Oct 8-9 | Prompt / Wireframes / Priority Matrix / Timeframes                             | Incomplete |
-| Oct 9   | Project Approval / Touch files / Implement AuthKey and Base / File Structuring | Incomplete |
-| Oct 10  | Build Components/ Get Requests / Render to DOM                                 | Incomplete |
-| Oct 11  | Make POST requests                                                             | Incomplete |
-| Oct 12  | Route/Link Components                                                          | Incomplete |
-| Oct 13  | Styling                                                                        | Incomplete |
-| Oct 14  | Finish MVP                                                                     | Incomplete |
-| Oct 15  | Post MVP/ Clean up project/ Update README.md                                   | Incomplete |
+| Oct 8-9 | Prompt / Wireframes / Priority Matrix / Timeframes                             | Complete   |
+| Oct 9   | Project Approval / Touch files / Implement AuthKey and Base / File Structuring | Complete   |
+| Oct 10  | Build Components/ Get Requests / Render to DOM                                 | Complete   |
+| Oct 11  | Make POST requests                                                             | Complete   |
+| Oct 12  | Route/Link Components                                                          | Complete   |
+| Oct 13  | Styling                                                                        | Complete   |
+| Oct 14  | Finish MVP                                                                     | Complete   |
+| Oct 14  | Update README.md                                                               | Complete   |
+| Oct 15  | Post MVP/ Clean up project                                                     | Incomplete |
 | Oct 16  | Presentations                                                                  | Incomplete |
 
 ## Priority Matrix
 
 ## Timeframes
 
-| Component                                                         | Priority | Estimated Time | Time Invested | Actual Time |
-| ----------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project setup                                                     |    H     |     3 hrs      |               |             |
-| Build Componenets                                                 |    H     |     3 hrs      |               |             |
-| Implementing API Base/Key                                         |    H     |     3 hrs      |               |             |
-| Returning response from initial get request and playing with data |    H     |     3 hrs      |               |             |
-| Create a POST request                                             |    H     |     3 hrs      |               |             |
-| Return and render GET request of entries                          |    H     |     3 hrs      |               |             |
-| Whiteboarding                                                     |    H     |     3 hrs      |               |             |
-| Style desktop elements                                            |    H     |     3 hrs      |               |             |
-| Style tablet elements                                             |    H     |     3 hrs      |               |             |
-| Style mobile elements                                             |    H     |     3 hrs      |               |             |
-| Troubleshooting and Research/Learn                                |    H     |     3 hrs      |               |             |
-| Total                                                             |    H     |     33 hrs     |               |             |
+| Component                                                         | Priority | Estimated Time | Time Invested |
+| ----------------------------------------------------------------- | :------: | :------------: | :-----------: |
+| Project setup/README.md                                           |    H     |     3 hrs      |     8 hrs     |
+| Build Components                                                  |    H     |     3 hrs      |     4 hrs     |
+| Implementing API Base/Key                                         |    H     |     3 hrs      |    0.5 hrs    |
+| Returning response from initial get request and playing with data |    H     |     3 hrs      |     1 hrs     |
+| Create a POST request                                             |    H     |     3 hrs      |     1 hrs     |
+| Return and render GET request of entries                          |    H     |     3 hrs      |     1 hrs     |
+| File Structuring                                                  |    H     |     1 hrs      |     1 hrs     |
+| Style desktop elements                                            |    H     |     3 hrs      |     6 hrs     |
+| Style tablet elements                                             |    H     |     3 hrs      |     2 hrs     |
+| Style mobile elements                                             |    H     |     3 hrs      |     6 hrs     |
+| Troubleshooting and Research/Learn                                |    H     |     3 hrs      |     8 hrs     |
+| Total                                                             |    H     |     33 hrs     |   38.5 hrs    |
 
 ## Swot
 
