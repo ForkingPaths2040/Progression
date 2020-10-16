@@ -33,6 +33,8 @@ https://api.airtable.com/v0/
 
 ## Wireframes
 
+[View All](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/wireframes/preview.md)
+
 #### MVP
 
 React:
@@ -74,6 +76,8 @@ React:
 | Oct 16  | Presentations                                                                  | Incomplete |
 
 ## Priority Matrix
+
+![Time and Priority Matrix (1).png](https://github.com/ForkingPaths2040/Progression/blob/main/PNGs/Time%20and%20Priority%20Matrix%20(1).png)
 
 ## Timeframes
 
