@@ -1,7 +1,6 @@
 # Progression
 
-Project 2 for GA's SEI
-View the [Progression Website](https://progression.netlify.app/)
+### H# View the [Progression Website](https://progression.netlify.app/)
 
 ## Project Description
 
