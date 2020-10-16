@@ -17,27 +17,24 @@ function Entries() {
   }, []);
     return (
       <div>
-        <table className='entries'>
-          <tbody>
-            <tr className='table-header'>
-              <th>TRICK</th>
-              <th>USERNAME</th>
-              <th>STANCE</th>
-              <th>TYPE</th>
-              <th>LANDING</th>
-            </tr>
+        
+        <div id='entry-header'>
+          <h1>Username</h1>
+          <h1>Trick</h1>
+          <div className='entry-list'>
+          <h1>Landing</h1>
+          <h1>Type</h1>
+          <h1>Stance</h1></div>
+          </div>
         {entries.map((entry) => (
-          <tr className='entry-container' key={entry.id}>
-            <td className='entry-cells'>{entry.fields.trick}</td>
-            <td className='entry-cells'>{entry.fields.username}</td>
-            <td className='entry-cells'>{entry.fields.stance}</td>
-            <td className='entry-cells'>{entry.fields.type}</td>
-            <td className='entry-cells'>{entry.fields.landing}</td>
-          </tr>
-        ))}
-            </tbody>
-        </table>
-          
+          <a href={entry.fields.giph} target='_blank' rel='noopener noreferrer' key={entry.id}><div className='entry-container' key={entry.id}>
+            <h3 className='entry-title'>{entry.fields.username}</h3>
+            <h3>{entry.fields.trick}</h3>
+            <div className='entry-list'><h3>{entry.fields.landing}</h3>
+            <h3>{entry.fields.type}</h3>
+            <h3>{entry.fields.stance}</h3></div>
+            </div> </a>
+        ))}          
       </div>
 
     );

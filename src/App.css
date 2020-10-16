@@ -9,14 +9,12 @@ body {
   list-style-type: none;
   float: right;
   padding: 15px;
+  margin: 25px;
 }
 
-nav ul {
-  margin-right: 30px;
-}
 nav {
   background-color: none;
-  height: 50px;
+  height: 100px;
   width: 100%;
 }
 .page-length {
@@ -46,19 +44,26 @@ nav {
   grid-gap: 10px;
   align-items: center;
 }
-.entries {
+#entry-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   background-color: white;
-  width: 75%;
-  margin: 3% auto;
+  color: black;
   text-align: center;
 }
-
-.entries th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #363946;
+.entry-container {
   color: white;
+  background-color: rgba(54, 57, 70);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin: 10px;
+}
+.entry-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .link {
   text-decoration: none;
@@ -131,11 +136,13 @@ button {
   }
   nav {
     background: black;
-    margin-top: -17px;
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
   }
   .nav-item {
-    display: inline;
-    font-size: 10px;
+    margin: 0 auto;
   }
   .all-tricks {
     display: grid;
@@ -145,11 +152,11 @@ button {
   }
   .home-page {
     position: absolute;
-    left: 130px;
-    top: 170px;
+    left: 100px;
+    top: 300px;
   }
   .home-page h1 {
-    width: 225px;
+    width: 250px;
   }
   .trick-container {
     width: 100%;
@@ -169,10 +176,37 @@ button {
     overflow-wrap: break-word;
   }
   .trick-page img {
-    max-width: 60%;
+    max-width: 100%;
     margin: auto;
   }
   .trick-page button {
-    margin: 15px;
+    margin: 10px auto;
+  }
+  .entry-container {
+    display: inline-block;
+    width: 100%;
+    margin: 15px auto;
+  }
+  #entry-header {
+    display: none;
+  }
+  .entry-title {
+    font-size: 28px;
+  }
+  .entry-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .trick-page img {
+    max-width: 100%;
+  }
+  #entry-header {
+    margin: 0 10px;
+    font-size: 10px;
+  }
+  .entry-container {
+    font-size: 12px;
   }
 }
